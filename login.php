@@ -16,7 +16,7 @@ $sql = "SELECT * FROM userdata WHERE un = '$uname' and pw = '$pwd'";
   $result = $conn->query($sql);
   if($result->num_rows > 0) {
     $_SESSION['userlogin'] = $uname;
-    header("location: http://localhost/mywebsite/mainpage.php");
+    header("location: mainpage.php");
 }
 else {
     echo "Your email or password is invalid";
